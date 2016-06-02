@@ -3,8 +3,6 @@ var listItem ={
   document.querySelector('form').onsubmit = listItem.addToList;
 },
   promo : function(ev) {
-   //this.ev.preventDefault();
-   debugger;
    this.parentNode.style.border= "solid blue" ;
 
  },
@@ -37,7 +35,6 @@ return listElement;
 
  addToList : function(ev) {
   ev.preventDefault();
-  debugger;
  var nameList =  document.querySelector('#nameList');
  /*if(!nameList.hasChildNodes){
   nameList.appendChild(listItem.buildList(this.name.value));
