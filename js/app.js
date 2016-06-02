@@ -8,7 +8,6 @@ var listItem ={
  },
 
   del : function(ev){
-   //this.parentNode.ev.preventDefault();
    this.parentNode.remove();
  },
 
@@ -34,16 +33,9 @@ return listElement;
 
 
  addToList : function(ev) {
-  ev.preventDefault();
+ ev.preventDefault();
  var nameList =  document.querySelector('#nameList');
- /*if(!nameList.hasChildNodes){
-  nameList.appendChild(listItem.buildList(this.name.value));
-  }
-  else{*/
-    nameList.insertBefore(listItem.buildList(this.name.value),nameList.childNodes[0]);
-    flag = 0;
-
-
+ nameList.insertBefore(listItem.buildList(this.name.value),nameList.childNodes[0]);
 },
 
 };
